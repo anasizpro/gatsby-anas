@@ -13,7 +13,17 @@ module.exports = {
    * Gatsby has a rich ecosystem of plugins.
    * If you need any more you can search here: https://www.gatsbyjs.com/plugins/
    */
+  
+  
   plugins: [
+    // Tell gatsby which theme you will be using.
+		{
+		resolve: "gatsby-wordpress-theme-phoenix",
+		options: {
+			wordPressUrl: 'xxxx',
+            frontendUrl: 'https://jerrnews.netlify.app'
+		}
+	}
     {
       /**
        * First up is the WordPress source plugin that connects Gatsby
